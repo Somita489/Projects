@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!--navigation bar-->
+    <header class="header">
+        <nav class="navbar">
+          <div class="nav-content">
+            <div><a href="#home">Home</a></div>
+            <div><a href="#about">About</a></div>
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#contact">Contact</a></div>
+          </div>
+        </nav>
+    </header>
+  
+    <!--home-->
+    <section id="home" class="section home">
+      <div id="cursor"></div>
+      <div class="canvas"><canvas id="draw"></canvas></div>
+      <div class="home-text">
+
+        <h1>Hi,I'm </br>Somita Agarwal</h1>
+        <p>Welcome to my Portfolio</p>
+      </div>
+        
+    </section>
+      
+      
+    <!--about-->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p id="typed-text"></p>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+    <div class="container">
+    </br>
+      <h2>My Projects/Experience</h2>
+      <div class="project1">
+        <h3>Portfolio Website</h3>
+        <p>Click for more details</p>
+      </div>
+        <div id="popup1">
+        <p>This website is my first project, developed with a great deal of dedication and effort. It is a front-end project in web development, and I have utilized the following tools in its creation:</p>
+        </br>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Three.js</li>
+          <li>GSAP</li>
+        </ul>
+        <div id="closeBtn1"><i class="fa-duotone fa-solid fa-circle-xmark"></i></div>
+      </div>
+      
+      <div class="project2">
+        <h3>Associate Manager at Udgam</h3>
+        <p>Click for more details</p>
+        <div id="popup2"><p>Udgam is the annual entrepreneurship summit organized by IIT Guwahati and is the largest of its kind in North-East India. Currently, I am serving as the Associate Manager for Udgam 2025, which is set to take place from January 17th to 19th, 2025.</p>
+          <div id="closeBtn2"><i class="fa-duotone fa-solid fa-circle-xmark"></i></div>
+        </div>
+        
+  </div>
+    
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to work with me or just want to chat, feel free to reach out!</p>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    
+    <div class="animation1">
+      <canvas id="draw1"></canvas>
+    </div>
+    </section>
+    
+    <section>
+    <footer class="footer">
+    </footer>
+    </section>
+
+
+<!-- Three.js core library -->
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+
+<!-- Orbit controls -->
+<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+<!-- GLTFLoader  -->
+<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+<!--gsap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+<!--scrolltrigger-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--for text typing effect-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
