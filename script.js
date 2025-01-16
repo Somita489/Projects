@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 let geometry = new THREE.OctahedronGeometry(5,1);
-const material = new THREE.MeshBasicMaterial( { color: 0xffffff,wireframe:true, wireframeLinewidth:10, wireframeLinecap:'round', wireframeLinejoin:'round'} );
+const material = new THREE.MeshBasicMaterial( { color: 0xffffff,wireframe:true} );
 const octahedron = new THREE.Mesh( geometry, material );
 scenex.add( octahedron );
 
