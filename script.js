@@ -136,8 +136,6 @@ model.position.y = yPosition;
             renderer.render(scene, camera);
         }
         animate();
-    }, undefined, function (error) {
-        console.error(error);
     });
 
     
